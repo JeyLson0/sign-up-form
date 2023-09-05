@@ -1,7 +1,5 @@
 html {
     box-sizing: border-box;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
@@ -10,6 +8,8 @@ html {
 
 body{
     margin: 0;
+    width: 100vw;
+    height: 100vh;
     width: 100%;
     background-color: #FFF2CC;
     display: flex;
@@ -175,4 +175,98 @@ input[type=checkbox]:checked {
 .err-code{
     font-size: 0.8rem;
     color: red;
+}
+
+@media (max-width: 670px) {
+
+    html {
+        box-sizing: border-box;
+        flex-direction: column;
+        display: flex;
+        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-container{
+        width: 100%;
+        height: 300px;
+        padding: 0px;
+     }
+     
+     img[alt=logo]{
+         position: absolute;
+         width: clamp(50px, 120px, 150px);
+         height: auto;
+     }
+     
+     .img-container img[alt="burger-bg-edited"]{
+         height: 100%;
+         bottom: 600px;
+         top: 0px;
+         bottom: 200px;
+         object-fit: cover;
+     }
+     
+      form {
+         width: clamp(500px, 65%, 100vw);
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+         text-align: center;
+         align-items: center;
+         padding: 0px;
+      }
+     
+     .header {
+         width: 100%;
+     }
+     
+     .submit-container {
+         width: 100%;
+     }
+     
+      .form-lists{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+         align-items: center;
+         width: 100%;
+         height: 60%;
+         gap: 10px;
+       }
+     
+     .row{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: space-evenly;
+         height: 100%;
+         width: 100%;
+         gap: 10px;
+     }
+     
+     .row-container {
+         width: 100%;
+     }
+     
+     .input-row{
+         border-radius: 70px;
+         height: 30px;
+         width: 100%;
+         margin: 10px 0px;
+         text-align: center;
+         background-color: #FFD966;
+         border-color: #FFD966;
+         border-style: none;
+         box-shadow: -5px 7px 3px rgba(128, 128, 128, 0.212);
+     }
 }

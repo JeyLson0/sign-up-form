@@ -1,4 +1,5 @@
 
+/* Input border validation */
 let inputElement = document.querySelectorAll(".input-element")
 inputElement.forEach(input => {
     input.addEventListener("input", e => {
@@ -13,10 +14,8 @@ inputElement.forEach(input => {
     })
 });   
 
-
-let nameRegex = /^[a-zA-z ?]+$/g;
-
 /* First Name Validation */
+let nameRegex = /^[a-zA-z ?]+$/g;
 let fNameErrMsg = document.createElement("div")
 fNameErrMsg.textContent = '*Invalid Content'
 fNameErrMsg.classList.add('err-code')
@@ -61,10 +60,6 @@ lName.addEventListener("input", e => {
         return
     }
 })
-
-
-
-
 
 /* Password Validation */
 const password = document.querySelector('#user-password')
